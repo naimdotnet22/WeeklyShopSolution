@@ -1,0 +1,118 @@
+{
+  "Routes": [
+
+    //Employee Route
+    {
+      "DownstreamPathTemplate": "/api/Employee/GetEmployees",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 46705
+        }
+      ],
+      "UpstreamPathTemplate": "/GetEmployees",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/Employee/GetEmployee/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 46705
+        }
+      ],
+      "UpstreamPathTemplate": "/GetEmployee/{id}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/Employee/AddOrEditEmployee",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 46705
+        }
+      ],
+      "UpstreamPathTemplate": "/AddOrEditEmployee",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/Employee/DeleteEmployee/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 46705
+        }
+      ],
+      "UpstreamPathTemplate": "/DeleteEmployee/{id}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+
+
+    //Product Route
+    {
+      "DownstreamPathTemplate": "/api/Product/GetProducts",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 15359
+        }
+      ],
+      "UpstreamPathTemplate": "/GetProducts",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/Product/GetProduct/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 15359
+        }
+      ],
+      "UpstreamPathTemplate": "/GetProduct/{id}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/Product/AddOrEditProduct",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 15359
+        }
+      ],
+      "UpstreamPathTemplate": "/AddOrEditProduct",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/Product/DeleteProduct/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 15359
+        }
+      ],
+      "UpstreamPathTemplate": "/DeleteProduct/{id}",
+      "UpstreamHttpMethod": [ "GET" ]
+    }
+
+
+
+
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:17871"
+  }
+}
